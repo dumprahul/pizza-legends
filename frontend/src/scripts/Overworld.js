@@ -1,5 +1,3 @@
-import utils from "../scripts/utils";
-
 
 class Overworld {
     constructor(config) {
