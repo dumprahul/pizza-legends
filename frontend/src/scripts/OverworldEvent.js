@@ -1,4 +1,6 @@
-import utils from "../scripts/utils";
+import utils from "./utils";
+import TextMessage from "./TextMessage";
+import PauseMenu from "./PauseMenu";
 
 
 class OverworldEvent {
@@ -129,4 +131,6 @@ class OverworldEvent {
       })
     }
   
-  }
+  };
+
+export default OverworldEvent;

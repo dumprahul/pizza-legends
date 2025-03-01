@@ -1,3 +1,5 @@
+import KeyboardMenu from "../KeyboardMenu";
+
 class ReplacementMenu {
     constructor({ replacements, onComplete }) {
       this.replacements = replacements;
@@ -36,3 +38,5 @@ class ReplacementMenu {
       }
     }
   }
+
+  export default ReplacementMenu;

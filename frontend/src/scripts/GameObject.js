@@ -1,3 +1,5 @@
+import Sprite from "./Sprite";
+import OverworldEvent from "./OverworldEvent";
 class GameObject {
     constructor(config) {
       this.id = null;
@@ -69,3 +71,5 @@ class GameObject {
   
   
   }
+
+export default GameObject;

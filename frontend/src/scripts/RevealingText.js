@@ -49,4 +49,6 @@ class RevealingText {
   
     }
   
-  }
+  };
+
+export default RevealingText;

@@ -36,3 +36,5 @@ class DirectionInput {
     }
   
   }
+
+export default DirectionInput;

@@ -1,3 +1,4 @@
+import Combatant from "./Battle/Combatant";
 class Hud {
     constructor() {
       this.scoreboards = [];
@@ -52,3 +53,5 @@ class Hud {
   
   
   }
+
+export default Hud;

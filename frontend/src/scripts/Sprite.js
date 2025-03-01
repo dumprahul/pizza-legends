@@ -1,4 +1,4 @@
-import utils from "../scripts/utils";
+import utils from "./utils";
 
 class Sprite {
     constructor(config) {
@@ -92,4 +92,6 @@ class Sprite {
       this.updateAnimationProgress();
     }
   
-  }
+  };
+
+export default Sprite;

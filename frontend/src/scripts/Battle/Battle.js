@@ -1,4 +1,6 @@
 import utils from "../scripts/utils";
+import Combatant from "./Combatant";
+import Team
 
 
 class Battle {
@@ -177,3 +179,5 @@ class Battle {
     }
   
   }
+
+export default Battle;

@@ -1,3 +1,4 @@
+import KeyPressListener from "./KeyPressListener";
 class KeyboardMenu {
     constructor(config={}) {
       this.options = []; //set by updater method
@@ -90,3 +91,6 @@ class KeyboardMenu {
     }
   
   }
+
+export default KeyboardMenu;
+

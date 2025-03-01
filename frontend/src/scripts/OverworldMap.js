@@ -1,4 +1,8 @@
-import utils from "../scripts/utils";
+import utils from "./utils";
+import PlayerState from "./State/PlayerState";
+import OverworldEvent from "./OverworldEvent";
+import Person from "./Person";
+import PizzaStone from "./PizzaStone";
 
 
 class OverworldMap {
@@ -95,7 +99,7 @@ class OverworldMap {
   
         const relevantScenario = match.talking.find(scenario => {
           return (scenario.required || []).every(sf => {
-            return playerState.storyFlags[sf]
+            return PlayerState.storyFlags[sf]
           })
         })
         relevantScenario && this.startCutscene(relevantScenario.events)
@@ -1097,4 +1101,6 @@ class OverworldMap {
         [utils.asGridCoord(13,11)]: true,
       }
     },
-  }
+  };
+
+export default OverworldMap;

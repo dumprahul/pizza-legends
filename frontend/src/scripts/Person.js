@@ -1,4 +1,4 @@
-import utils from "../scripts/utils";
+import utils from "./utils";
 
 
 class Person extends GameObject {
@@ -105,3 +105,5 @@ class Person extends GameObject {
     }
   
   }
+
+export default Person;

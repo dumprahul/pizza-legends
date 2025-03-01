@@ -1,4 +1,7 @@
-import utils from "../scripts/utils";
+import utils from "./utils";
+import KeyPressListener from "./KeyPressListener";
+import KeyboardMenu from "./KeyboardMenu";
+import PlayerState from "./State/PlayerState";
 
 class PauseMenu {
     constructor({progress, onComplete}) {
@@ -10,8 +13,8 @@ class PauseMenu {
   
       //Case 1: Show the first page of options
       if (pageKey === "root") {
-        const lineupPizzas = playerState.lineup.map(id => {
-          const {pizzaId} = playerState.pizzas[id];
+        const lineupPizzas = PlayerState.lineup.map(id => {
+          const {pizzaId} = PlayerState.pizzas[id];
           const base = Pizzas[pizzaId];
           return {
             label: base.name,
@@ -42,16 +45,16 @@ class PauseMenu {
       }
   
       //Case 2: Show the options for just one pizza (by id)
-      const unequipped = Object.keys(playerState.pizzas).filter(id => {
-        return playerState.lineup.indexOf(id) === -1;
+      const unequipped = Object.keys(PlayerState.pizzas).filter(id => {
+        return PlayerState.lineup.indexOf(id) === -1;
       }).map(id => {
-        const {pizzaId} = playerState.pizzas[id];
+        const {pizzaId} = PlayerState.pizzas[id];
         const base = Pizzas[pizzaId];
         return {
           label: `Swap for ${base.name}`,
           description: base.description,
           handler: () => {
-            playerState.swapLineup(pageKey, id);
+            PlayerState.swapLineup(pageKey, id);
             this.keyboardMenu.setOptions( this.getOptions("root") );
           }
         }
@@ -63,7 +66,7 @@ class PauseMenu {
           label: "Move to front",
           description: "Move this pizza to the front of the list",
           handler: () => {
-            playerState.moveToFront(pageKey);
+            PlayerState.moveToFront(pageKey);
             this.keyboardMenu.setOptions( this.getOptions("root") );
           }
         },
@@ -110,3 +113,5 @@ class PauseMenu {
     }
   
   }
+
+export default PauseMenu;

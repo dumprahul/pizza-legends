@@ -1,3 +1,7 @@
+import Sprite from "./Sprite";
+import PlayerState from "./State/PlayerState";
+import GameObject from "./GameObject";
+
 class PizzaStone extends GameObject {
     constructor(config) {
       super(config);
@@ -32,9 +36,11 @@ class PizzaStone extends GameObject {
     }
   
     update() {
-     this.sprite.currentAnimation = playerState.storyFlags[this.storyFlag]
+     this.sprite.currentAnimation = PlayerState.storyFlags[this.storyFlag]
       ? "used-down"
       : "unused-down";
     }
   
   }
+
+export default PizzaStone;

@@ -1,3 +1,5 @@
+import KeyPressListener from "./KeyPressListener";
+import RevealingText from "./RevealingText";
 class TextMessage {
   constructor({ text, onComplete }) {
     this.text = text;
@@ -49,4 +51,6 @@ class TextMessage {
     this.revealingText.init();
   }
 
-}
+};
+
+export default TextMessage;

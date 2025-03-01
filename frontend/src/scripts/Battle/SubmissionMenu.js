@@ -1,3 +1,4 @@
+import KeyboardMenu from "../KeyboardMenu";
 class SubmissionMenu { 
     constructor({ caster, enemy, onComplete, items, replacements }) {
       this.caster = caster;
@@ -144,3 +145,5 @@ class SubmissionMenu {
       }
     }
   }
+
+export default SubmissionMenu;

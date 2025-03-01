@@ -1,3 +1,4 @@
+import PlayerState from "./State/PlayerState";
 class Progress {
     constructor() {
       this.mapId = "Kitchen";
@@ -14,10 +15,10 @@ class Progress {
         startingHeroY: this.startingHeroY,
         startingHeroDirection: this.startingHeroDirection,
         playerState: {
-          pizzas: playerState.pizzas,
-          lineup: playerState.lineup,
-          items: playerState.items,
-          storyFlags: playerState.storyFlags
+          pizzas: PlayerState.pizzas,
+          lineup: PlayerState.lineup,
+          items: PlayerState.items,
+          storyFlags: PlayerState.storyFlags
         }
       }))
     }
@@ -40,9 +41,11 @@ class Progress {
         this.startingHeroY = file.startingHeroY;
         this.startingHeroDirection = file.startingHeroDirection;
         Object.keys(file.playerState).forEach(key => {
-          playerState[key] = file.playerState[key];
+          PlayerState[key] = file.playerState[key];
         })
       }
     }
   
   }
+
+export default Progress;

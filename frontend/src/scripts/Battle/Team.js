@@ -45,4 +45,7 @@ class Team {
       this.update();
       container.appendChild(this.element);
     }
-  }
+  };
+
+  export default Team;
+  

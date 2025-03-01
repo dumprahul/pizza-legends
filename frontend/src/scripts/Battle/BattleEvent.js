@@ -1,4 +1,6 @@
 import utils from "../scripts/utils";
+import TextMessage from "../TextMessage";
+import Replce
 
 class BattleEvent {
     constructor(event, battle) {
@@ -153,3 +155,5 @@ class BattleEvent {
       this[this.event.type](resolve);
     }
   }
+
+export default BattleEvent;

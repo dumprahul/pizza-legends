@@ -1,3 +1,7 @@
+import RevealingText from "./RevealingText";
+import PlayerState from "./State/PlayerState";
+import KeyboardMenu from "./KeyboardMenu";
+
 class CraftingMenu {
     constructor({ pizzas, onComplete}) {
       this.pizzas = pizzas;
@@ -11,7 +15,7 @@ class CraftingMenu {
           label: base.name,
           description: base.description,
           handler: () => {
-            playerState.addPizza(id);
+            PlayerState.addPizza(id);
             this.close();
           }
         }
@@ -45,3 +49,5 @@ class CraftingMenu {
       container.appendChild(this.element);
     }
   }
+
+export default CraftingMenu;

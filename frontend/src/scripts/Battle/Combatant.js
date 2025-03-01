@@ -131,4 +131,7 @@ class Combatant {
       this.update();
     }
   
-  }
+  };
+
+export default Combatant;
+ 
