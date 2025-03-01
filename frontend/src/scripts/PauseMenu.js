@@ -1,3 +1,5 @@
+import utils from "../scripts/utils";
+
 class PauseMenu {
     constructor({progress, onComplete}) {
       this.progress = progress;

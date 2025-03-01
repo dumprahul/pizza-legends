@@ -1,3 +1,5 @@
+import utils from "../scripts/utils";
+
 class BattleEvent {
     constructor(event, battle) {
       this.event = event;

@@ -1,3 +1,5 @@
+import utils from "../scripts/utils";
+
 class Combatant {
     constructor(config, battle) {
       Object.keys(config).forEach(key => {

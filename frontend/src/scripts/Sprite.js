@@ -1,3 +1,5 @@
+import utils from "../scripts/utils";
+
 class Sprite {
     constructor(config) {
   

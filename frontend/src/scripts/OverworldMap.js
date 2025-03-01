@@ -1,3 +1,6 @@
+import utils from "../scripts/utils";
+
+
 class OverworldMap {
     constructor(config) {
       this.overworld = null;

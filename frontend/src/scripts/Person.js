@@ -1,3 +1,6 @@
+import utils from "../scripts/utils";
+
+
 class Person extends GameObject {
     constructor(config) {
       super(config);

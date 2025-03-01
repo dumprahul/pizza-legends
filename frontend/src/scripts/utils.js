@@ -46,4 +46,6 @@ const utils = {
       document.dispatchEvent(event);
     }
     
-  }
+  };
+
+export default utils;

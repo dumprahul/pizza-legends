@@ -1,3 +1,7 @@
+import React from "react";
+import GameCanvas from "./components/GameCanvas";
+
+
 import "./styles/global.css";
 import "./styles/TextMessage.css";
 import "./styles/SceneTransition.css";
@@ -11,12 +15,12 @@ import "./styles/Team.css";
 import "./styles/Menus.css";
 
 
-
-
-export default function App() {
+const App = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
-}
+    <div>
+      <GameCanvas />
+    </div>
+  );
+};
+
+export default App;

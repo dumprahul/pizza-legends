@@ -1,3 +1,6 @@
+import utils from "../scripts/utils";
+
+
 class OverworldEvent {
     constructor({ map, event}) {
       this.map = map;

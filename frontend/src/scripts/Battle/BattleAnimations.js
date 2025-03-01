@@ -1,3 +1,5 @@
+import utils from "../scripts/utils";
+
 window.BattleAnimations = {
     async spin(event, onComplete) {
       const element = event.caster.pizzaElement;
